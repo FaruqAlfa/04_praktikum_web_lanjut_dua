@@ -12,7 +12,7 @@ class ProfileController extends Controller
         if ($profile == 'fahmi'){
             return view('profileFahmi',  ['user' => Profile::getById(1)]);
         }elseif ($profile = 'rizqi'){
-            return view('profileRizqi');
+            return view('profileRizqi',  ['user' => Profile::getById(3)]);
         }else{
             return view('home');
         }
