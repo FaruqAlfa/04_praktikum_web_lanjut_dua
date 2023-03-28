@@ -24,12 +24,22 @@
       </div>
       <div class="card-body">
        <center><H1>Selamat Datang di Halaman Website Kami</H1></center> 
+       <div class="info">
+        <a href="#" class="d-block">{{ $user->name }}</a>
+      </div>
 
       </div>
-      <!-- /.card-body -->
-      <div class="card-footer">
-        Footer
-      </div>
+
+      <li class="nav-item d-none d-sm-inline-block">
+        <a class="nav-link" href="{{ route('logout') }}"
+        onclick="event.preventDefault();
+                document.getElementById('logout-form').submit();">
+            {{__('Logout') }}
+        </a>
+        <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+          @csrf
+        </form>
+      </li>
       <!-- /.card-footer-->
     </div>
     <!-- /.card -->

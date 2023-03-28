@@ -15,13 +15,13 @@ class ProfileSeeder extends Seeder
      */
     public function run()
     {
-         $nilai=[//[
-        //     'nama' => 'Mukhamad Faruq Al Fahmi',
-        //     'email' => 'alfafahmi172@gmail.com',
-        //     'jurusan' => 'Teknik informatika',
-        //     'alamat' => 'Desa Papar, Kabupaten Kediri'
+         $nilai=[[
+             'nama' => 'Mukhamad Faruq Al Fahmi',
+             'email' => 'alfafahmi172@gmail.com',
+             'jurusan' => 'Teknik informatika',
+             'alamat' => 'Desa Papar, Kabupaten Kediri'
 
-        // ],
+         ],
         [
             'nama' => 'Rizqi Rohmatul Huda',
             'email' => 'rizkyrhuda@gmail.com',
