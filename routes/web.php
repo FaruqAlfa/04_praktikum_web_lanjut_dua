@@ -34,3 +34,7 @@ Route::get('/pengalaman', [App\Http\Controllers\ExperienceController::class, 'ex
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
